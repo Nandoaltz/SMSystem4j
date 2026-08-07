@@ -1,0 +1,70 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Registro
+meta:
+  id: wrk_e36dab4b261140a1be64798942498620
+  created: 1786100678651
+  modified: 1786100678651
+  description: ""
+collection:
+  - url: localhost:8080/registro/save
+    name: Fazer Registro
+    meta:
+      id: req_c239a1936ed44efb8b0074684a7e6607
+      created: 1786043002369
+      modified: 1786131174506
+      isPrivate: false
+      description: ""
+      sortKey: -1786100799573
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"motorista": 1,
+        	"veiculo": 1,
+        	"km": 1236,
+        	"tipoRegistro": "SAIDA"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: localhost:8080/registro/consult/1
+    name: Buscar Registro por Veiculo
+    meta:
+      id: req_874438a435324a75932d150859479257
+      created: 1786045695666
+      modified: 1786130770761
+      isPrivate: false
+      description: ""
+      sortKey: -1786100799673
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_82e06c466d023a3126cc3196ef3285e41d116ecb
+    created: 1786100678689
+    modified: 1786100678689
+environments:
+  name: Base Environment
+  meta:
+    id: env_82e06c466d023a3126cc3196ef3285e41d116ecb
+    created: 1786100678657
+    modified: 1786100678657
+    isPrivate: false

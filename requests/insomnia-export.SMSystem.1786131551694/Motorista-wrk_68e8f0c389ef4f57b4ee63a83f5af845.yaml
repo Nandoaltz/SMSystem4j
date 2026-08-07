@@ -1,0 +1,52 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Motorista
+meta:
+  id: wrk_68e8f0c389ef4f57b4ee63a83f5af845
+  created: 1784114776646
+  modified: 1786100651706
+  description: ""
+collection:
+  - url: localhost:8080/motorista/save
+    name: "Cadastrar Motorista "
+    meta:
+      id: req_188a34f917da447aa70898e3ec81ca86
+      created: 1784114782109
+      modified: 1786100732934
+      isPrivate: false
+      description: ""
+      sortKey: -1784114782109
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nome":"Fernando",
+        	"email":"fernando@gmail.com",
+        	"senha":"fernando",
+        	"role":"ADM"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_774a2b0017e3c39d0a0f0de252981c7a0f94615a
+    created: 1784114776654
+    modified: 1784114776654
+environments:
+  name: Base Environment
+  meta:
+    id: env_774a2b0017e3c39d0a0f0de252981c7a0f94615a
+    created: 1784114776651
+    modified: 1784114776651
+    isPrivate: false
