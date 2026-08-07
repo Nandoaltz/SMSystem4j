@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: SMSystem
+
+  r2dbc:
+    password: 2004
+    url: r2dbc:mysql://localhost:3306/SMSystem
+    username: root
