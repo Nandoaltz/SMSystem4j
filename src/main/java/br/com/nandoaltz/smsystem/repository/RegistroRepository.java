@@ -18,7 +18,7 @@ public interface RegistroRepository extends R2dbcRepository<Registros, Long> {
     CASE
         WHEN r.tipoRegistro = 'SAIDA'
             AND LAG(r.km) over (PARTITION BY r.veiculo ORDER BY r.dataRegistro) <> r.km
-          -- AND LAG(r.tipoRegistro) over (PARTITION BY r.veiculo ORDER BY r.dataRegistro) = 'CHEGADA'
+            AND LAG(r.tipoRegistro) over (PARTITION BY r.veiculo ORDER BY r.dataRegistro) = 'CHEGADA'
             THEN 'QUABRA'
         ELSE 'NORMAL'
     END as quebrakm
