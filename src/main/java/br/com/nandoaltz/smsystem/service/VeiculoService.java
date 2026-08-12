@@ -13,6 +13,7 @@ public class VeiculoService {
     private final VeiculoRepository veiculoRepository;
 
     public Mono<Veiculo> save(Veiculo veiculo){
+
         return veiculoRepository.save(veiculo);
     }
 }

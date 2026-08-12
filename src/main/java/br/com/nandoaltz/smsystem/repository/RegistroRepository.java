@@ -10,6 +10,7 @@ import reactor.core.publisher.Flux;
 public interface RegistroRepository extends R2dbcRepository<Registros, Long> {
     @Query("""
     select
+    v.id as idv,
     u.nome,
     r.tipoRegistro,
     r.dataRegistro as data,

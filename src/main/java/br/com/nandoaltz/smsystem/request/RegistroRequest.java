@@ -1,6 +1,7 @@
 package br.com.nandoaltz.smsystem.request;
 
-import br.com.nandoaltz.smsystem.entity.TipoRegistro;
+
+import br.com.nandoaltz.smsystem.enums.TipoRegistro;
 
 public record RegistroRequest(
         Long motorista,

@@ -1,6 +1,7 @@
 package br.com.nandoaltz.smsystem.response;
 
-import br.com.nandoaltz.smsystem.entity.Roles;
+
+import br.com.nandoaltz.smsystem.enums.Roles;
 
 public record MotoristaResponse(
         Long id,

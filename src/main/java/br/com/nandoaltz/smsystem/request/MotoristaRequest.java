@@ -1,6 +1,7 @@
 package br.com.nandoaltz.smsystem.request;
 
-import br.com.nandoaltz.smsystem.entity.Roles;
+
+import br.com.nandoaltz.smsystem.enums.Roles;
 
 public record MotoristaRequest(
         String nome,

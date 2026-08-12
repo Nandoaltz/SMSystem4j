@@ -2,7 +2,6 @@ package br.com.nandoaltz.smsystem.controller;
 
 import br.com.nandoaltz.smsystem.entity.Motorista;
 import br.com.nandoaltz.smsystem.mapper.MotoristaMapper;
-import br.com.nandoaltz.smsystem.repository.MotoristaRepository;
 import br.com.nandoaltz.smsystem.request.MotoristaRequest;
 import br.com.nandoaltz.smsystem.response.MotoristaResponse;
 import br.com.nandoaltz.smsystem.service.MotoristaService;

@@ -1,5 +1,7 @@
 package br.com.nandoaltz.smsystem.entity;
 
+import br.com.nandoaltz.smsystem.enums.QuebraKm;
+import br.com.nandoaltz.smsystem.enums.TipoRegistro;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
