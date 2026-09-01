@@ -13,7 +13,6 @@ import reactor.core.publisher.Mono;
 import reactor.core.publisher.Sinks;
 
 import java.awt.*;
-import java.time.Duration;
 
 @RestController
 @RequestMapping("registro")
@@ -36,9 +35,12 @@ public class RegistrosController {
 
     @GetMapping(value = "/consult/{id}", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     public Flux<RegistroResponse> getAll(@PathVariable Long id){
-
         Flux<RegistroResponse> all = registroService.getAll(id);
 
+        /*
+        * O filtro permite que mostre somente dados emitidos que fazem parte do mesmo filtro retornado pelo banco
+        * com base no id
+        * */
         return Flux.merge(all, sink.asFlux().filter(i -> i.idv().equals(id)));
     }
 }
